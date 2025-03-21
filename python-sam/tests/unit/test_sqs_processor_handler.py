@@ -9,7 +9,7 @@ from unittest.mock import patch
 import boto3
 import pytest
 import io
-from moto import mock_dynamodb
+from moto.dynamodb import mock_dynamodb
 from botocore.response import StreamingBody
 
 SQS_MESSAGE_STORE_TABLE_NAME = 'SQS_MESSAGE_STORE_TEST'
