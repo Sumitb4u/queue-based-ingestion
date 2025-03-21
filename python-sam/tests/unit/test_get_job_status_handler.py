@@ -9,8 +9,8 @@ from unittest.mock import patch
 import boto3
 import pytest
 import io
-from moto import mock_dynamodb
-from moto import mock_s3
+from moto.dynamodb import mock_dynamodb
+from moto.s3 import mock_s3
 
 from botocore.response import StreamingBody
 
