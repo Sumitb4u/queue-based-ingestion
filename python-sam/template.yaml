@@ -60,7 +60,7 @@ Resources:
   JobOutputPayloadStore:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub "job-payload-output-bucket-${AWS::StackName}"
+      BucketName: !Sub "job-payload-output-bucket--${AWS::StackName}"
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
         BlockPublicPolicy: true
